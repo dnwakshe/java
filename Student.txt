@@ -1,0 +1,13 @@
+************* Student Details ************* 
+1
+Dnyan
+kard
+MCA
+81-8982186
+************* Student Details ************* 
+77
+77
+77
+77
+-----------------------------------
+Total Marks of Student: 385Avarge Marks of Student: 77%-------------------------------------
