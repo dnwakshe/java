@@ -1,13 +1,32 @@
 ************* Student Details ************* 
-1
-Dnyan
-kard
-MCA
-81-8982186
-************* Student Details ************* 
-77
-77
-77
-77
+Roll No: 1
+Studet Name :Dnyaneshwar
+Address :karad
+Standerd :MCA
+Mobile No:98347234
+************* Student Result Details ************* 
+Math 77
+English 77
+Science 77
+Geography 77
+Social Science 77
 -----------------------------------
-Total Marks of Student: 385Avarge Marks of Student: 77%-------------------------------------
+Total Marks of Student: 385
+Avarge Marks of Student: 77%
+-------------------------------------
+************* Student Details ************* 
+Roll No: 2
+Studet Name :Dnyaneshwar
+Address :Atpadi
+Standerd :MCa
+Mobile No:328472384
+************* Student Result Details ************* 
+Math 87
+English 87
+Science 98
+Geography 98
+Social Science 76
+-----------------------------------
+Total Marks of Student: 446
+Avarge Marks of Student: 89%
+-------------------------------------

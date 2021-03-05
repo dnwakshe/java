@@ -1,4 +1,3 @@
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -70,8 +69,8 @@ class files{
 
         }
     }
-     void WriteFile(int math, int eng, int sci, int geo,int  socio,int sum, int avg){
-        
+    static void WriteFile(int math, int eng, int sci, int geo,int  socio,int sum, int avg){
+       
         
         Scanner sc = new Scanner(System.in);
         String FileName = sc.next();
@@ -79,15 +78,17 @@ class files{
         try{
             
             FileWriter myWriter = new FileWriter(new File("Student.txt"), true);  // creatting the file with file1 name            
-            myWriter.write("************* Student Details ************* \n");
-            myWriter.write(math+"\n");
-            myWriter.write(eng+"\n");
-            myWriter.write(geo+"\n");
-            myWriter.write(socio+"\n");            
+            myWriter.write("************* Student Result Details ************* \n");
+            myWriter.write("Math "+math+"\n");
+            myWriter.write("English "+eng+"\n");
+            myWriter.write("Science "+sci+"\n");
+            myWriter.write("Geography "+geo+"\n");
+            myWriter.write("Social Science "+socio+"\n");            
             myWriter.write("-----------------------------------\n");  
-            myWriter.write("Total Marks of Student: "+sum);
-            myWriter.write("Avarge Marks of Student: "+avg+"%");
-            myWriter.write("-------------------------------------");
+            myWriter.write("Total Marks of Student: "+sum+"\n" );
+            myWriter.write("Avarge Marks of Student: "+avg+"%"+"\n");
+            myWriter.write("-------------------------------------\n");
+            
             System.out.println("File is created and data is added..");
                       
             myWriter.close();
@@ -158,7 +159,7 @@ class files{
 class subject extends files{
    public static int math,eng,sci,geo, socio,sum,avg;
     
-    void marks(){
+   static void marks(){
         System.out.println("Enter marks of subjects respectively : \n");
         System.out.println("Math  eng sci geo socio\n");
         Scanner sc = new Scanner(System.in);
@@ -167,9 +168,14 @@ class subject extends files{
         sci=sc.nextInt();
         geo=sc.nextInt(); 
         socio=sc.nextInt();
-       System.out.println( "************* Subject Marks ************* " + "\nMath : "+ math +"\nEnglish: "+ eng+" \nScience: "+sci+"\nGeographi: "+geo+ "\nSocial Science: "+socio);
-       sum = math+eng+sci+geo+socio;
+        System.out.println( "************* Subject Marks ************* " + "\nMath : "+ math +"\nEnglish: "+ eng+" \nScience: "+sci+"\nGeographi: "+geo+ "\nSocial Science: "+socio);
+        sum = math+eng+sci+geo+socio;
         avg=sum/5;
+        System.out.println("-----------------------------------\n");  
+        System.out.println("Total Marks of Student: "+sum+"\n" );
+        System.out.println("Avarge Marks of Student: "+avg+"%"+"\n");
+        System.out.println("-------------------------------------\n");
+        System.out.println("--Want to Exit ? --\n Y/N");
         
         WriteFile(math,eng,sci,geo,socio,sum,avg); // creating new file for new studnet
      
@@ -197,11 +203,11 @@ class Student extends subject{
         try{
             FileWriter myWriter = new FileWriter(new File("Student.txt"), true);
             myWriter.write("************* Student Details ************* \n");
-            myWriter.write(roll_no+"\n");
-            myWriter.write(name+"\n");
-            myWriter.write(address+"\n");
-            myWriter.write(std+"\n");    
-            myWriter.write(mob_no+"\n"); 
+            myWriter.write("Roll No: "+roll_no+"\n");
+            myWriter.write("Studet Name :"+name+"\n");
+            myWriter.write("Address :"+address+"\n");
+            myWriter.write("Standerd :"+std+"\n");    
+            myWriter.write("Mobile No:"+mob_no+"\n"); 
             myWriter.close();
             System.out.println("Data Saved...\n");
              marks();
